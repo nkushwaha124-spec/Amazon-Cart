@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Cart</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script>
+    function getPrice() {
+      let one = document.getElementById('pp').innerHTML;
+      let q = document.getElementById('qty').value;
+      let total = one * q;
+      document.getElementById('tp').innerHTML = "&#8377;" + total;
+      document.getElementById('to').innerHTML = "&#8377;" + total;
+      document.getElementById('qt').innerHTML = q;
+
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand bg-dark " href="#">
+          <img src="img/images.png" style="height: 80px;" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <i class="fa-solid fa-location-dot" style="font-size: 30px;"></i>
+                  </div>
+                  <div class="col-sm-10">
+                    <span style="font-size: 12px;">Delivering to Mumbai 4000001 <br />
+                      Update location
+                    </span>
+                  </div>
+                </div>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <a class="nav-link dropdown-toggle bg-light" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ALL
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" style="color: white;">Amazon Fashion</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: white;">Alexa Skills</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: white;">Amazon Devices</a></li>
+                </ul>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn bg-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color: white;">
+                <img src="img/flag.jfif" alt="" style="height: 20px;width: 20px;">
+                <span>EN</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: white;">Hindi</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">TA</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">TE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color: white;">
+                <span>Hello,sign in</span>
+                <br />
+                <span>Account & Lists</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Account</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Order</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Address</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">Returns <br /> & Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span>Cart</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white;">
+          <span><i class="fa-solid fa-list" style="font-size: 20px;"></i></span>
+          <span>All</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color: white;">
+                <span>Fresh</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Account</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Order</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Address</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">MXPlayer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Bestsellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">Mobiles</a>
+            </li>
+            <a class="nav-link" href="#" style="color: white;">Today'sDeal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color: white;">
+                <span>Prime</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Account</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Order</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Your Address</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">CustomerService</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">NewReleases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Home&Kitchen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">AmazonPay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">Computers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN START -->
+    <div class="row">
+      <h1>Shopping Cart</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <img src="img/mobile.jpg" alt="">
+      </div>
+      <div class="col-sm-8">
+        <h3>realme 13 Pro 5G (Monet Purple,8GB+128GB)</h3>
+        <span style="color: green;font-size: 10px;">In stock</span>
+        <br />
+        <img src="img/fba-badge_18px._CB485936079_.png" alt="">
+        <br />
+        <input type="checkbox" name="checkbox" id="">This will be a gift
+        <a href="#">Learn More</a>
+        <br />
+        <h1 id="pp">19999</h1>
+        <select id="qty" onchange='getPrice()'>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+        <div class="row my-5" style="float: right;">
+          <h1>Subtotal=</h1>
+          <h1 id="tp">19999</h1>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <span style="color: green;font-size: 10px;">Your order is eligible for FREE Delivery.</span>
+        <span>Choose FREE Delivery option at checkout.</span>
+        <br />
+        Subtotal:( <span id="qt">1</span> items)
+        <span id="to">19999</span>
+        <br/>
+        <input type="checkbox" name="v" id="">
+        <span>This order contains a gift</span>
+        <button class="btn btn-warning" type="submit">Proceed to Buy</button>
+      </div>
+    </div>
+
+    <!-- MAIN END -->
+        <!-- footer start -->
+
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col-sm-2 text-light">
+          <h4>ABOUT</h4>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Flipkart Stories</p>
+          <p>Press</p>
+          <p>Flipkart Wholesale</p>
+          <p>Corporate Information</p>
+        </div>
+        <div class="col-sm-2 text-light">
+          <h4>HELP</h4>
+          <p>Payments</p>
+          <p>Shipping</p>
+          <p>Cancellation & Returns</p>
+          <p>FAQ</p>
+          <p>Report Infringement</p>
+        </div>
+        <div class="col-sm-2 text-light">
+          <h4>CONSUMER POLICY</h4>
+          <p>Cancellation & Returns</p>
+          <p>Terms Of Use</p>
+          <p>Security</p>
+          <p>Privacy</p>
+          <p>Sitemap</p>
+          <p>Grievance Redressal</p>
+          <p>EPR Compliance</p>
+        </div>
+        <div class="col-sm-2 text-light">
+          <h4>SOCIAL</h4>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>YouTube</p>
+        </div>
+        <div class="col-sm-2 text-light">
+          <h4>Mail Us:</h4>
+          <p>Flipkart Internet Private Limited,</p>
+          <p>Buildings Alyssa, Begonia &</p>
+          <p>Clove Embassy Tech Village,</p>
+          <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+          <p>Bengaluru, 560103,</p>
+          <p>Karnataka, India</p>
+        </div>
+        <div class="col-sm-2 text-light">
+          <h4>Registered Office Address:</h4>
+          <p>Flipkart Internet Private Limited,</p>
+          <p>Buildings Alyssa, Begonia &</p>
+          <p>Clove Embassy Tech Village,</p>
+          <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+          <p>Bengaluru, 560103,</p>
+          <p>Karnataka, India</p>
+          <p>CIN : U51109KA2012PTC066107</p>
+          <p>Telephone: 044-45614700</p>
+        </div>
+      </div>
+    </div>
+   <!-- footer end -->
+   <div class="footerExtras bg-dark text-light">
+    <span><i class="fa-solid fa-suitcase" style="color: #ffe500;"></i> Become a Seller</span>
+    <span><i class="fa-solid fa-star" style="color: #ffe500;"></i> Advertise</span>
+    <span><i class="fa-solid fa-gift" style="color: #ffe500;"></i> Gift Cards</span>
+    <span><i class="fa-solid fa-circle-question" style="color: #ffe500;"></i> Help Center</span>
+    <span>©Amazon.com</span>
+
+  </div>
+
+
+  </div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
